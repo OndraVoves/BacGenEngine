@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/application-exit.png</file>
+        <file>images/applications-education-preschool.png</file>
+        <file>images/applications-games.png</file>
+        <file>images/applications-toys.png</file>
+        <file>images/component-add.png</file>
+        <file>images/component-remove.png</file>
+        <file>images/configure.png</file>
+        <file>images/document-multiple.png</file>
+        <file>images/document-open-folder.png</file>
+        <file>images/document-save.png</file>
+        <file>images/folder.png</file>
+        <file>images/fork.png</file>
+        <file>images/game-configure.png</file>
+        <file>images/game-new.png</file>
+        <file>images/game-open.png</file>
+        <file>images/game-save.png</file>
+        <file>images/gameobject-add.png</file>
+        <file>images/gameobject-duplicate.png</file>
+        <file>images/gameobject-remove.png</file>
+        <file>images/go-jump-definition.png</file>
+        <file>images/input-gaming.png</file>
+        <file>images/list-add.png</file>
+        <file>images/list-remove.png</file>
+        <file>images/mail-tagged.png</file>
+        <file>images/media-playback-start.png</file>
+        <file>images/modules.png</file>
+        <file>images/preferences-system.png</file>
+        <file>images/scene-add.png</file>
+        <file>images/scene-configure.png</file>
+        <file>images/scene-remove.png</file>
+        <file>images/scene.png</file>
+        <file>images/tab-new.png</file>
+    </qresource>
+</RCC>

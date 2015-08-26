@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PTransformation</class>
+ <widget class="QWidget" name="PTransformation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>270</width>
+    <height>208</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>270</width>
+    <height>208</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMaximumSize</enum>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Position</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QDoubleSpinBox" name="PosXDoubleSpinBox">
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="PosYDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="PosZDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Rotation</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QDoubleSpinBox" name="RotXDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="RotYDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="RotZDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Scale</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QDoubleSpinBox" name="ScaXDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="ScaYDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="ScaZDoubleSpinBox">
+        <property name="decimals">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PosXDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>posXChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PosYDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>posYChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PosZDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>posZChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotXDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>rotXChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotYDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>rotYChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotZDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>rotZChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScaXDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>scaXChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScaYDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>scaYChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScaZDoubleSpinBox</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>PTransformation</receiver>
+   <slot>scaZChanged(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>posXChanged(double)</slot>
+  <slot>posYChanged(double)</slot>
+  <slot>posZChanged(double)</slot>
+  <slot>rotXChanged(double)</slot>
+  <slot>rotYChanged(double)</slot>
+  <slot>rotZChanged(double)</slot>
+  <slot>scaXChanged(double)</slot>
+  <slot>scaYChanged(double)</slot>
+  <slot>scaZChanged(double)</slot>
+ </slots>
+</ui>
